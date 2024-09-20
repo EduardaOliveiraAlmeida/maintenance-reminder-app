@@ -5,7 +5,7 @@ from datetime import datetime
 
 
 @app.route('/manutencoes', methods=['GET'])
-def get_manutencoes():
+def get_maintenances():
     maintenance = Maintenance.query.all()
     return jsonify([{
         'execution_id': m.execution_id,
